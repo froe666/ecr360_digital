@@ -912,3 +912,4 @@ export default function DemandePage() {
     </div>
   );
 }
+export const dynamic = 'force-dynamic';

@@ -5,6 +5,8 @@ import { useSearchParams } from 'next/navigation';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+export const dynamic = 'force-dynamic';
+
 const packLabels: Record<string, string> = {
   essentiel: 'Pack Essentiel — 890.- + 19.90.-/mois',
   confort: 'Pack Confort — 890.- + 39.90.-/mois',

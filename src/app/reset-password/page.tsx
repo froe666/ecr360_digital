@@ -4,6 +4,8 @@ import Link from 'next/link';
 import AppLogo from '@/components/ui/AppLogo';
 import { createClient } from '@/lib/supabase/client';
 
+export const dynamic = 'force-dynamic';
+
 export default function ResetPasswordPage() {
   const supabase = createClient();
   const [email, setEmail] = useState('');

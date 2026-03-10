@@ -2,6 +2,8 @@
 import React, { Suspense } from 'react';
 import EspaceClientDashboard from './EspaceClientDashboard';
 
+export const dynamic = 'force-dynamic';
+
 export default function EspaceClientPage() {
   return (
     <Suspense fallback={
