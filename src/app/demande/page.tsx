@@ -6,6 +6,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import { createClient } from '@/lib/supabase/client';
 
+export const dynamic = 'force-dynamic';
+
 const typeSiteOptions = [
   { value: 'vitrine', label: 'Site Vitrine', desc: 'Présentation de votre entreprise' },
   { value: 'ecommerce', label: 'E-Commerce', desc: 'Boutique en ligne avec paiements' },
@@ -806,7 +808,7 @@ export default function DemandePage() {
                           <p className="font-display font-600 text-sm text-fg">{palette.label}</p>
                           {isSelected && (
                             <div className="w-4 h-4 rounded-full bg-accent flex items-center justify-center flex-shrink-0">
-                              <svg width="8" height="8" fill="none" stroke="#070E1A" strokeWidth="3" viewBox="0 0 24 24">
+                              <svg width="8" height="8" fill="none" stroke="#00C2FF" strokeWidth="3" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
                               </svg>
                             </div>
@@ -912,4 +914,3 @@ export default function DemandePage() {
     </div>
   );
 }
-export const dynamic = 'force-dynamic';

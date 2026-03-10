@@ -3,6 +3,8 @@ import { stripe } from '@/lib/stripe/server';
 import { createClient as createSupabaseClient } from '@supabase/supabase-js';
 import Stripe from 'stripe';
 
+export const dynamic = 'force-dynamic';
+
 // Use service role for webhook (bypasses RLS)
 function getServiceClient() {
   return createSupabaseClient(

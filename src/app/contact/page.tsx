@@ -4,6 +4,8 @@ import Link from 'next/link';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
+export const dynamic = 'force-dynamic';
+
 const packOptions = [
   { value: '', label: 'Choisir un pack (optionnel)' },
   { value: 'pack1', label: 'Pack 1 — Site Sans Entretien (19.90.-/mois)' },
